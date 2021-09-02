@@ -16,26 +16,46 @@
 </head>
 
 <body>
-    <h1 class="text-center">Search Book</h1>
-
-    <!-- search section  -->
-    <section class="container mt-5">
-        <div class="input-group mb-3">
-            <input id="search-field" type="text" class="form-control" placeholder="Recipient's username"
-                aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button onclick="searchButton()" class="btn btn-outline-secondary" type="button"
-                id="button-addon2">Button</button>
+    <main>
+        <div class="">
+            <h1 class="text-center ">Search Your <span class="text-danger">Favorite Book</span></h1>
         </div>
-    </section>
 
-    <!-- search result  -->
-    <section class="container">
-        <div id="div-container" class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+        <!-- search section  -->
+        <section class="container mt-5">
+            <div class="input-group mb-3">
+                <input id="search-field" type="text" class="form-control "
+                    placeholder="search your book name in English word" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button onclick="searchButton()" class="btn btn-outline-secondary" type="button"
+                    id="button-addon2">search</button>
+            </div>
+
+        </section>
+
+        <!-- error handle result section  -->
+        <section class="container">
+            <div class="text-danger">
+                <h4 id="error"></h4>
+            </div>
+
+            <div>
+                <h4 id="search-number" class="text-primary"> </h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h3 id="no-result" class="text-danger"></h3>
+            </div>
+        </section>
+
+        <!-- show result section -->
+        <section class="container">
+
+            <div id="div-container" class="row row-cols-1 row-cols-md-3 g-4">
 
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
 
 
